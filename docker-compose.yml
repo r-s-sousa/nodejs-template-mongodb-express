@@ -1,0 +1,27 @@
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb-cobre-facil
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: cobre_facil_username
+      MONGO_INITDB_ROOT_PASSWORD: cobre_facil_password
+      MONGO_INITDB_DATABASE: cobre_facil_database
+  nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nodejs-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - mongodb
+volumes:
+  mongo-data:

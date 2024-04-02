@@ -1,0 +1,51 @@
+{
+  "name": "cobre-facil-api",
+  "version": "2.0.0",
+  "description": "API para controle de processos no Cobre Facil vs Circle",
+  "main": "server.ts",
+  "author": {
+    "email": "ivanilton.neto@archoffice.tech",
+    "name": "Ivanilton Neto"
+  },
+  "contributes": {
+    "email": "rafa@archoffice.tech",
+    "name": "Rafael Sousa"
+  },
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only server.ts",
+    "exec": "ts-node-dev --transpile-only server.ts",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "checkUpdates": "npx npm-check-updates",
+    "update": "npx npm-check-updates -u",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/node": "^20.12.3",
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.4",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.3"
+  }
+}

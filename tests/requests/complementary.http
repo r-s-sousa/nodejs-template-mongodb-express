@@ -1,0 +1,11 @@
+### status
+GET http://localhost:3000
+Accept: application/json
+
+### head
+HEAD http://localhost:3000
+Accept: application/json
+
+### options
+OPTIONS http://localhost:3000
+Accept: application/json

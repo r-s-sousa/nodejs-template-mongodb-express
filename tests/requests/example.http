@@ -1,0 +1,29 @@
+### get all
+GET http://localhost:3000/example
+Accept: application/json
+
+### get especific
+GET http://localhost:3000/example/1
+Accept: application/json
+
+### create new
+POST http://localhost:3000/example
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "biginteger"
+}
+
+### update existing
+PUT http://localhost:3000/example/12
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "bignumber"
+}
+
+### delete especific
+DELETE http://localhost:3000/example/18
+Accept: application/json
