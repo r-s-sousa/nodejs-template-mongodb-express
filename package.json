@@ -1,13 +1,9 @@
 {
-  "name": "cobre-facil-api",
-  "version": "2.0.0",
-  "description": "API para controle de processos no Cobre Facil vs Circle",
+  "name": "experimental-api",
+  "version": "1.0.0",
+  "description": "API com uso do mongodb com estrutura padronizada",
   "main": "server.ts",
   "author": {
-    "email": "ivanilton.neto@archoffice.tech",
-    "name": "Ivanilton Neto"
-  },
-  "contributes": {
     "email": "rafa@archoffice.tech",
     "name": "Rafael Sousa"
   },
@@ -21,19 +17,15 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@types/node": "^20.12.3",
-    "axios": "^1.6.8",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.2.4",
-    "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0",
-    "uuid": "^9.0.1"
+    "mongoose": "^8.2.4"
   },
   "devDependencies": {
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.12.3",
     "@types/body-parser": "^1.19.5",
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
